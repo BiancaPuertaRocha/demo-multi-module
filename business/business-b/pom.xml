@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://maven.apache.org/POM/4.0.0"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <parent>
+        <groupId>com.example</groupId>
+        <artifactId>business</artifactId>
+        <version>1.0.0-SNAPSHOT</version>
+    </parent>
+
+    <modelVersion>4.0.0</modelVersion>
+    <artifactId>business-b</artifactId>
+
+    <properties>
+        <micronaut.openapi.generate.server>true</micronaut.openapi.generate.server>
+        <micronaut.openapi.definition>src/main/resources/library-microservice-b.yml</micronaut.openapi.definition>
+        <micronaut.openapi.api.package.name>microservice.b.example.api</micronaut.openapi.api.package.name>
+        <micronaut.openapi.model.package.name>microservice.b.example.model</micronaut.openapi.model.package.name>
+        <micronaut.openapi.invoker.package.name>microservice.b.example</micronaut.openapi.invoker.package.name>
+        <micronaut.openapi.use.reactive>false</micronaut.openapi.use.reactive>
+        <micronaut.openapi.server.use.auth>false</micronaut.openapi.server.use.auth>
+    </properties>
+</project>
